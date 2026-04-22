@@ -1,0 +1,334 @@
+Found 80 FreeCAD + 80 KiCad CSV files
+
+Building per-software and shared vocabularies …
+  FreeCAD:  21 syscalls, 95 bigrams, 214 trigrams, 8 path_types
+  KiCad:    20 syscalls, 117 bigrams, 312 trigrams, 8 path_types
+  Shared:   22 syscalls, 133 bigrams, 369 trigrams, 9 path_types
+  Classes (4): ['bulk_export', 'normal', 'project_scan', 'source_copy']
+
+============================================================
+Experiment 1: Standard 70/30
+============================================================
+  [freecad] Building train feature matrix …
+  [freecad] Building test feature matrix …
+    [           fusion_full]  n_feat= 436  acc=1.000  f1=1.000
+    [     fusion_minus_freq]  n_feat= 415  acc=1.000  f1=1.000
+    [      fusion_minus_seq]  n_feat= 127  acc=1.000  f1=1.000
+    [    fusion_minus_trans]  n_feat= 341  acc=1.000  f1=1.000
+    [      fusion_minus_ctx]  n_feat= 428  acc=1.000  f1=1.000
+    [  fusion_minus_scalars]  n_feat= 433  acc=1.000  f1=1.000
+  [kicad] Building train feature matrix …
+  [kicad] Building test feature matrix …
+    [           fusion_full]  n_feat= 577  acc=1.000  f1=1.000
+    [     fusion_minus_freq]  n_feat= 557  acc=1.000  f1=1.000
+    [      fusion_minus_seq]  n_feat= 148  acc=1.000  f1=1.000
+    [    fusion_minus_trans]  n_feat= 460  acc=1.000  f1=1.000
+    [      fusion_minus_ctx]  n_feat= 569  acc=1.000  f1=1.000
+    [  fusion_minus_scalars]  n_feat= 574  acc=1.000  f1=1.000
+
+Standard results → models/fusion_advantage/leave_one_out/leave_one_out_standard.csv
+
+============================================================
+Experiment 2: Noise robustness
+============================================================
+  [freecad] Building clean train feature matrix …
+  [freecad] Pre-training one RF per config on clean data …
+  [freecad] Building noisy test noise=0.00  seed=0 …
+    [           fusion_full] acc=1.000  f1=1.000
+    [     fusion_minus_freq] acc=1.000  f1=1.000
+    [      fusion_minus_seq] acc=1.000  f1=1.000
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=1.000  f1=1.000
+    [  fusion_minus_scalars] acc=1.000  f1=1.000
+  [freecad] Building noisy test noise=0.05  seed=0 …
+    [           fusion_full] acc=0.875  f1=0.867
+    [     fusion_minus_freq] acc=1.000  f1=1.000
+    [      fusion_minus_seq] acc=0.833  f1=0.812
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=0.750  f1=0.701
+    [  fusion_minus_scalars] acc=0.875  f1=0.867
+  [freecad] Building noisy test noise=0.05  seed=1 …
+    [           fusion_full] acc=1.000  f1=1.000
+    [     fusion_minus_freq] acc=1.000  f1=1.000
+    [      fusion_minus_seq] acc=0.875  f1=0.867
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=0.750  f1=0.667
+    [  fusion_minus_scalars] acc=0.875  f1=0.862
+  [freecad] Building noisy test noise=0.05  seed=2 …
+    [           fusion_full] acc=1.000  f1=1.000
+    [     fusion_minus_freq] acc=1.000  f1=1.000
+    [      fusion_minus_seq] acc=0.833  f1=0.804
+    [    fusion_minus_trans] acc=0.958  f1=0.958
+    [      fusion_minus_ctx] acc=0.792  f1=0.748
+    [  fusion_minus_scalars] acc=1.000  f1=1.000
+  [freecad] Building noisy test noise=0.05  seed=3 …
+    [           fusion_full] acc=0.958  f1=0.958
+    [     fusion_minus_freq] acc=0.958  f1=0.958
+    [      fusion_minus_seq] acc=0.833  f1=0.812
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=0.750  f1=0.657
+    [  fusion_minus_scalars] acc=0.958  f1=0.958
+  [freecad] Building noisy test noise=0.05  seed=4 …
+    [           fusion_full] acc=0.917  f1=0.912
+    [     fusion_minus_freq] acc=0.958  f1=0.958
+    [      fusion_minus_seq] acc=0.792  f1=0.779
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=0.750  f1=0.657
+    [  fusion_minus_scalars] acc=0.875  f1=0.862
+  [freecad] Building noisy test noise=0.10  seed=0 …
+    [           fusion_full] acc=0.875  f1=0.862
+    [     fusion_minus_freq] acc=0.792  f1=0.779
+    [      fusion_minus_seq] acc=0.917  f1=0.914
+    [    fusion_minus_trans] acc=0.708  f1=0.679
+    [      fusion_minus_ctx] acc=0.542  f1=0.452
+    [  fusion_minus_scalars] acc=0.833  f1=0.804
+  [freecad] Building noisy test noise=0.10  seed=1 …
+    [           fusion_full] acc=0.792  f1=0.740
+    [     fusion_minus_freq] acc=0.708  f1=0.694
+    [      fusion_minus_seq] acc=0.875  f1=0.870
+    [    fusion_minus_trans] acc=0.708  f1=0.700
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.708  f1=0.700
+  [freecad] Building noisy test noise=0.10  seed=2 …
+    [           fusion_full] acc=0.833  f1=0.806
+    [     fusion_minus_freq] acc=0.708  f1=0.679
+    [      fusion_minus_seq] acc=0.917  f1=0.914
+    [    fusion_minus_trans] acc=0.833  f1=0.831
+    [      fusion_minus_ctx] acc=0.583  f1=0.511
+    [  fusion_minus_scalars] acc=0.750  f1=0.657
+  [freecad] Building noisy test noise=0.10  seed=3 …
+    [           fusion_full] acc=0.917  f1=0.912
+    [     fusion_minus_freq] acc=0.917  f1=0.914
+    [      fusion_minus_seq] acc=0.875  f1=0.862
+    [    fusion_minus_trans] acc=0.792  f1=0.779
+    [      fusion_minus_ctx] acc=0.542  f1=0.452
+    [  fusion_minus_scalars] acc=0.833  f1=0.804
+  [freecad] Building noisy test noise=0.10  seed=4 …
+    [           fusion_full] acc=0.875  f1=0.867
+    [     fusion_minus_freq] acc=0.875  f1=0.867
+    [      fusion_minus_seq] acc=0.792  f1=0.768
+    [    fusion_minus_trans] acc=0.708  f1=0.679
+    [      fusion_minus_ctx] acc=0.542  f1=0.452
+    [  fusion_minus_scalars] acc=0.708  f1=0.679
+  [freecad] Building noisy test noise=0.30  seed=0 …
+    [           fusion_full] acc=0.625  f1=0.569
+    [     fusion_minus_freq] acc=0.500  f1=0.361
+    [      fusion_minus_seq] acc=0.500  f1=0.361
+    [    fusion_minus_trans] acc=0.500  f1=0.361
+    [      fusion_minus_ctx] acc=0.333  f1=0.232
+    [  fusion_minus_scalars] acc=0.500  f1=0.361
+  [freecad] Building noisy test noise=0.30  seed=1 …
+    [           fusion_full] acc=0.625  f1=0.563
+    [     fusion_minus_freq] acc=0.542  f1=0.439
+    [      fusion_minus_seq] acc=0.542  f1=0.439
+    [    fusion_minus_trans] acc=0.625  f1=0.547
+    [      fusion_minus_ctx] acc=0.292  f1=0.170
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [freecad] Building noisy test noise=0.30  seed=2 …
+    [           fusion_full] acc=0.667  f1=0.610
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.667  f1=0.650
+    [    fusion_minus_trans] acc=0.542  f1=0.429
+    [      fusion_minus_ctx] acc=0.292  f1=0.175
+    [  fusion_minus_scalars] acc=0.542  f1=0.429
+  [freecad] Building noisy test noise=0.30  seed=3 …
+    [           fusion_full] acc=0.542  f1=0.471
+    [     fusion_minus_freq] acc=0.500  f1=0.361
+    [      fusion_minus_seq] acc=0.500  f1=0.361
+    [    fusion_minus_trans] acc=0.542  f1=0.429
+    [      fusion_minus_ctx] acc=0.292  f1=0.175
+    [  fusion_minus_scalars] acc=0.500  f1=0.343
+  [freecad] Building noisy test noise=0.30  seed=4 …
+    [           fusion_full] acc=0.667  f1=0.576
+    [     fusion_minus_freq] acc=0.583  f1=0.511
+    [      fusion_minus_seq] acc=0.625  f1=0.589
+    [    fusion_minus_trans] acc=0.500  f1=0.361
+    [      fusion_minus_ctx] acc=0.292  f1=0.175
+    [  fusion_minus_scalars] acc=0.625  f1=0.589
+  [kicad] Building clean train feature matrix …
+  [kicad] Pre-training one RF per config on clean data …
+  [kicad] Building noisy test noise=0.00  seed=0 …
+    [           fusion_full] acc=1.000  f1=1.000
+    [     fusion_minus_freq] acc=1.000  f1=1.000
+    [      fusion_minus_seq] acc=1.000  f1=1.000
+    [    fusion_minus_trans] acc=1.000  f1=1.000
+    [      fusion_minus_ctx] acc=1.000  f1=1.000
+    [  fusion_minus_scalars] acc=1.000  f1=1.000
+  [kicad] Building noisy test noise=0.05  seed=0 …
+    [           fusion_full] acc=0.583  f1=0.511
+    [     fusion_minus_freq] acc=0.542  f1=0.452
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.583  f1=0.511
+  [kicad] Building noisy test noise=0.05  seed=1 …
+    [           fusion_full] acc=0.542  f1=0.452
+    [     fusion_minus_freq] acc=0.583  f1=0.511
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.05  seed=2 …
+    [           fusion_full] acc=0.542  f1=0.452
+    [     fusion_minus_freq] acc=0.542  f1=0.452
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.05  seed=3 …
+    [           fusion_full] acc=0.583  f1=0.511
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.05  seed=4 …
+    [           fusion_full] acc=0.583  f1=0.511
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.500  f1=0.375
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.10  seed=0 …
+    [           fusion_full] acc=0.500  f1=0.375
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.458  f1=0.347
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.333  f1=0.232
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.10  seed=1 …
+    [           fusion_full] acc=0.500  f1=0.375
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.657
+    [      fusion_minus_ctx] acc=0.375  f1=0.278
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.10  seed=2 …
+    [           fusion_full] acc=0.500  f1=0.375
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.667
+    [      fusion_minus_ctx] acc=0.333  f1=0.232
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.10  seed=3 …
+    [           fusion_full] acc=0.500  f1=0.375
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.657
+    [      fusion_minus_ctx] acc=0.417  f1=0.315
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.10  seed=4 …
+    [           fusion_full] acc=0.500  f1=0.375
+    [     fusion_minus_freq] acc=0.500  f1=0.375
+    [      fusion_minus_seq] acc=0.500  f1=0.375
+    [    fusion_minus_trans] acc=0.750  f1=0.657
+    [      fusion_minus_ctx] acc=0.375  f1=0.278
+    [  fusion_minus_scalars] acc=0.500  f1=0.375
+  [kicad] Building noisy test noise=0.30  seed=0 …
+    [           fusion_full] acc=0.250  f1=0.100
+    [     fusion_minus_freq] acc=0.250  f1=0.100
+    [      fusion_minus_seq] acc=0.375  f1=0.278
+    [    fusion_minus_trans] acc=0.458  f1=0.347
+    [      fusion_minus_ctx] acc=0.250  f1=0.100
+    [  fusion_minus_scalars] acc=0.250  f1=0.100
+  [kicad] Building noisy test noise=0.30  seed=1 …
+    [           fusion_full] acc=0.250  f1=0.100
+    [     fusion_minus_freq] acc=0.250  f1=0.100
+    [      fusion_minus_seq] acc=0.292  f1=0.175
+    [    fusion_minus_trans] acc=0.500  f1=0.375
+    [      fusion_minus_ctx] acc=0.250  f1=0.100
+    [  fusion_minus_scalars] acc=0.250  f1=0.100
+  [kicad] Building noisy test noise=0.30  seed=2 …
+    [           fusion_full] acc=0.250  f1=0.100
+    [     fusion_minus_freq] acc=0.250  f1=0.100
+    [      fusion_minus_seq] acc=0.375  f1=0.278
+    [    fusion_minus_trans] acc=0.458  f1=0.347
+    [      fusion_minus_ctx] acc=0.250  f1=0.100
+    [  fusion_minus_scalars] acc=0.250  f1=0.100
+  [kicad] Building noisy test noise=0.30  seed=3 …
+    [           fusion_full] acc=0.250  f1=0.100
+    [     fusion_minus_freq] acc=0.250  f1=0.100
+    [      fusion_minus_seq] acc=0.375  f1=0.278
+    [    fusion_minus_trans] acc=0.458  f1=0.347
+    [      fusion_minus_ctx] acc=0.250  f1=0.100
+    [  fusion_minus_scalars] acc=0.250  f1=0.100
+  [kicad] Building noisy test noise=0.30  seed=4 …
+    [           fusion_full] acc=0.250  f1=0.100
+    [     fusion_minus_freq] acc=0.250  f1=0.100
+    [      fusion_minus_seq] acc=0.292  f1=0.175
+    [    fusion_minus_trans] acc=0.458  f1=0.347
+    [      fusion_minus_ctx] acc=0.250  f1=0.100
+    [  fusion_minus_scalars] acc=0.250  f1=0.100
+
+Noise raw     → models/fusion_advantage/leave_one_out/leave_one_out_noise.csv
+Noise summary → models/fusion_advantage/leave_one_out/leave_one_out_noise_summary.csv
+
+============================================================
+Experiment 3: Cross-software transfer
+============================================================
+  Building full feature matrix for freecad …
+  Building full feature matrix for kicad …
+
+  Scenario: freecad_to_kicad
+    [           fusion_full]  acc=0.250  f1=0.100
+    [     fusion_minus_freq]  acc=0.250  f1=0.100
+    [      fusion_minus_seq]  acc=0.500  f1=0.375
+    [    fusion_minus_trans]  acc=0.250  f1=0.100
+    [      fusion_minus_ctx]  acc=0.250  f1=0.100
+    [  fusion_minus_scalars]  acc=0.250  f1=0.100
+
+  Scenario: kicad_to_freecad
+    [           fusion_full]  acc=0.250  f1=0.100
+    [     fusion_minus_freq]  acc=0.250  f1=0.100
+    [      fusion_minus_seq]  acc=0.250  f1=0.100
+    [    fusion_minus_trans]  acc=0.250  f1=0.100
+    [      fusion_minus_ctx]  acc=0.250  f1=0.100
+    [  fusion_minus_scalars]  acc=0.250  f1=0.100
+
+Cross-software results → models/fusion_advantage/leave_one_out/leave_one_out_cross.csv
+
+==========================================================================================
+SUMMARY: Standard 70/30 accuracy
+software              freecad  kicad
+config                              
+fusion_full             1.000  1.000
+fusion_minus_freq       1.000  1.000
+fusion_minus_seq        1.000  1.000
+fusion_minus_trans      1.000  1.000
+fusion_minus_ctx        1.000  1.000
+fusion_minus_scalars    1.000  1.000
+
+==========================================================================================
+SUMMARY: Noise robustness (session accuracy, mean over seeds)
+
+freecad:
+noise_level           0.00  0.05  0.10  0.30
+config                                      
+fusion_full          1.000 0.950 0.858 0.625
+fusion_minus_freq    1.000 0.983 0.800 0.525
+fusion_minus_seq     1.000 0.833 0.875 0.567
+fusion_minus_trans   1.000 0.992 0.750 0.542
+fusion_minus_ctx     1.000 0.758 0.542 0.300
+fusion_minus_scalars 1.000 0.917 0.767 0.533
+
+kicad:
+noise_level           0.00  0.05  0.10  0.30
+config                                      
+fusion_full          1.000 0.567 0.500 0.250
+fusion_minus_freq    1.000 0.533 0.500 0.250
+fusion_minus_seq     1.000 0.500 0.492 0.342
+fusion_minus_trans   1.000 0.750 0.750 0.467
+fusion_minus_ctx     1.000 0.500 0.367 0.250
+fusion_minus_scalars 1.000 0.517 0.500 0.250
+
+==========================================================================================
+SUMMARY: Cross-software transfer
+scenario              freecad_to_kicad  kicad_to_freecad
+config                                                  
+fusion_full                      0.250             0.250
+fusion_minus_freq                0.250             0.250
+fusion_minus_seq                 0.500             0.250
+fusion_minus_trans               0.250             0.250
+fusion_minus_ctx                 0.250             0.250
+fusion_minus_scalars             0.250             0.250
+==========================================================================================

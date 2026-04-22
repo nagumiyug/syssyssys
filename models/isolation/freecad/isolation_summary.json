@@ -1,0 +1,262 @@
+{
+  "modes": [
+    "scalars",
+    "freq",
+    "seq",
+    "trans",
+    "ctx",
+    "fusion"
+  ],
+  "anomaly_subtypes": [
+    "bulk_export",
+    "project_scan",
+    "source_copy"
+  ],
+  "n_train_chunks": 981,
+  "n_test_chunks": 418,
+  "n_train_sessions": 56,
+  "n_test_sessions": 24,
+  "results": [
+    {
+      "mode": "scalars",
+      "n_features": 3,
+      "chunk_accuracy": 0.9521531100478469,
+      "chunk_precision": 0.9596273291925466,
+      "chunk_recall": 0.9778481012658228,
+      "chunk_f1": 0.9686520376175548,
+      "chunk_fpr": 0.12745098039215685,
+      "chunk_tp": 309,
+      "chunk_tn": 89,
+      "chunk_fp": 13,
+      "chunk_fn": 7,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.9313725490196079,
+      "recall_project_scan": 1.0,
+      "recall_source_copy": 1.0
+    },
+    {
+      "mode": "freq",
+      "n_features": 21,
+      "chunk_accuracy": 0.937799043062201,
+      "chunk_precision": 0.9801324503311258,
+      "chunk_recall": 0.9367088607594937,
+      "chunk_f1": 0.9579288025889967,
+      "chunk_fpr": 0.058823529411764705,
+      "chunk_tp": 296,
+      "chunk_tn": 96,
+      "chunk_fp": 6,
+      "chunk_fn": 20,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.8823529411764706,
+      "recall_project_scan": 0.9495798319327731,
+      "recall_source_copy": 0.9789473684210527
+    },
+    {
+      "mode": "seq",
+      "n_features": 309,
+      "chunk_accuracy": 0.9425837320574163,
+      "chunk_precision": 0.964968152866242,
+      "chunk_recall": 0.9588607594936709,
+      "chunk_f1": 0.9619047619047619,
+      "chunk_fpr": 0.10784313725490197,
+      "chunk_tp": 303,
+      "chunk_tn": 91,
+      "chunk_fp": 11,
+      "chunk_fn": 13,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.9215686274509803,
+      "recall_project_scan": 0.9663865546218487,
+      "recall_source_copy": 0.9894736842105263
+    },
+    {
+      "mode": "trans",
+      "n_features": 95,
+      "chunk_accuracy": 0.9449760765550239,
+      "chunk_precision": 0.9741100323624595,
+      "chunk_recall": 0.9525316455696202,
+      "chunk_f1": 0.9632,
+      "chunk_fpr": 0.0784313725490196,
+      "chunk_tp": 301,
+      "chunk_tn": 94,
+      "chunk_fp": 8,
+      "chunk_fn": 15,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.9019607843137255,
+      "recall_project_scan": 0.9747899159663865,
+      "recall_source_copy": 0.9789473684210527
+    },
+    {
+      "mode": "ctx",
+      "n_features": 8,
+      "chunk_accuracy": 0.9258373205741627,
+      "chunk_precision": 0.9611650485436893,
+      "chunk_recall": 0.939873417721519,
+      "chunk_f1": 0.9504,
+      "chunk_fpr": 0.11764705882352941,
+      "chunk_tp": 297,
+      "chunk_tn": 90,
+      "chunk_fp": 12,
+      "chunk_fn": 19,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.9215686274509803,
+      "recall_project_scan": 0.907563025210084,
+      "recall_source_copy": 1.0
+    },
+    {
+      "mode": "fusion",
+      "n_features": 436,
+      "chunk_accuracy": 0.9521531100478469,
+      "chunk_precision": 0.9805194805194806,
+      "chunk_recall": 0.9556962025316456,
+      "chunk_f1": 0.967948717948718,
+      "chunk_fpr": 0.058823529411764705,
+      "chunk_tp": 302,
+      "chunk_tn": 96,
+      "chunk_fp": 6,
+      "chunk_fn": 14,
+      "session_accuracy": 1.0,
+      "session_precision": 1.0,
+      "session_recall": 1.0,
+      "session_f1": 1.0,
+      "session_fpr": 0.0,
+      "session_tp": 18,
+      "session_tn": 6,
+      "session_fp": 0,
+      "session_fn": 0,
+      "recall_bulk_export": 0.9117647058823529,
+      "recall_project_scan": 0.957983193277311,
+      "recall_source_copy": 1.0
+    }
+  ],
+  "feature_importances": {
+    "top20": [
+      {
+        "feature": "ctx_path_type::export_target",
+        "importance": 0.04789402237487306
+      },
+      {
+        "feature": "trans_norm::newfstatat->newfstatat",
+        "importance": 0.0263203377122564
+      },
+      {
+        "feature": "ctx_path_type::bulk_export_target",
+        "importance": 0.021627961335783437
+      },
+      {
+        "feature": "trans_norm::newfstatat->getdents64",
+        "importance": 0.02056781866604502
+      },
+      {
+        "feature": "syscall_entropy",
+        "importance": 0.019549096246364847
+      },
+      {
+        "feature": "transition_entropy",
+        "importance": 0.01800776209585195
+      },
+      {
+        "feature": "freq_count::openat",
+        "importance": 0.017992208953060917
+      },
+      {
+        "feature": "trans_norm::read->newfstatat",
+        "importance": 0.015384956569357547
+      },
+      {
+        "feature": "seq3_norm::newfstatat->newfstatat->newfstatat",
+        "importance": 0.013245331353968205
+      },
+      {
+        "feature": "self_loop_ratio",
+        "importance": 0.01319766632845883
+      },
+      {
+        "feature": "seq2_norm::newfstatat->newfstatat",
+        "importance": 0.01319608291082053
+      },
+      {
+        "feature": "seq2_norm::close->newfstatat",
+        "importance": 0.01265620628691669
+      },
+      {
+        "feature": "trans_norm::newfstatat->openat",
+        "importance": 0.012543367623504387
+      },
+      {
+        "feature": "ctx_path_type::other",
+        "importance": 0.012261072839994641
+      },
+      {
+        "feature": "seq2_norm::openat->newfstatat",
+        "importance": 0.012214883716989897
+      },
+      {
+        "feature": "ctx_path_type::unknown",
+        "importance": 0.01209542429704366
+      },
+      {
+        "feature": "freq_count::lseek",
+        "importance": 0.011287809125780819
+      },
+      {
+        "feature": "trans_norm::openat->openat",
+        "importance": 0.011236990629864071
+      },
+      {
+        "feature": "freq_count::newfstatat",
+        "importance": 0.011008020341584771
+      },
+      {
+        "feature": "trans_norm::openat->newfstatat",
+        "importance": 0.011000227269652172
+      }
+    ],
+    "by_group": {
+      "scalars": 0.05075452467067562,
+      "freq": 0.0690407401026484,
+      "seq": 0.4584433908926,
+      "trans": 0.3154793877123323,
+      "ctx": 0.10628195662174345
+    }
+  }
+}

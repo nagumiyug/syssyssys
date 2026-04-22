@@ -1,0 +1,104 @@
+{
+  "software": "kicad",
+  "n_experiments": 20,
+  "chunk_level": {
+    "accuracy_matrix": {
+      "F1": {
+        "DecisionTree": 0.8214084507042253,
+        "GradientBoosting": 0.8191549295774648,
+        "LogReg": 0.6022535211267606,
+        "RandomForest": 0.8425352112676057
+      },
+      "F2": {
+        "DecisionTree": 0.8611267605633803,
+        "GradientBoosting": 0.8630985915492958,
+        "LogReg": 0.8253521126760563,
+        "RandomForest": 0.8661971830985915
+      },
+      "F3": {
+        "DecisionTree": 0.8569014084507042,
+        "GradientBoosting": 0.8664788732394366,
+        "LogReg": 0.8509859154929578,
+        "RandomForest": 0.8645070422535212
+      },
+      "F4": {
+        "DecisionTree": 0.8723943661971831,
+        "GradientBoosting": 0.867887323943662,
+        "LogReg": 0.8684507042253521,
+        "RandomForest": 0.8707042253521127
+      },
+      "F5": {
+        "DecisionTree": 0.8726760563380281,
+        "GradientBoosting": 0.8681690140845071,
+        "LogReg": 0.8687323943661972,
+        "RandomForest": 0.8718309859154929
+      }
+    },
+    "delta_features_per_classifier": {
+      "DecisionTree": 0.05126760563380284,
+      "GradientBoosting": 0.049014084507042255,
+      "LogReg": 0.26647887323943664,
+      "RandomForest": 0.02929577464788724
+    },
+    "delta_classifiers_per_tier": {
+      "F1": 0.2402816901408451,
+      "F2": 0.04084507042253516,
+      "F3": 0.015492957746478853,
+      "F4": 0.004507042253521165,
+      "F5": 0.004507042253521054
+    },
+    "max_delta_features": 0.26647887323943664,
+    "max_delta_classifiers": 0.2402816901408451,
+    "hypothesis_confirmed": true
+  },
+  "session_level": {
+    "accuracy_matrix": {
+      "F1": {
+        "DecisionTree": 1.0,
+        "GradientBoosting": 1.0,
+        "LogReg": 0.9583333333333334,
+        "RandomForest": 1.0
+      },
+      "F2": {
+        "DecisionTree": 1.0,
+        "GradientBoosting": 1.0,
+        "LogReg": 1.0,
+        "RandomForest": 1.0
+      },
+      "F3": {
+        "DecisionTree": 1.0,
+        "GradientBoosting": 1.0,
+        "LogReg": 1.0,
+        "RandomForest": 1.0
+      },
+      "F4": {
+        "DecisionTree": 1.0,
+        "GradientBoosting": 1.0,
+        "LogReg": 1.0,
+        "RandomForest": 1.0
+      },
+      "F5": {
+        "DecisionTree": 1.0,
+        "GradientBoosting": 1.0,
+        "LogReg": 1.0,
+        "RandomForest": 1.0
+      }
+    },
+    "delta_features_per_classifier": {
+      "DecisionTree": 0.0,
+      "GradientBoosting": 0.0,
+      "LogReg": 0.04166666666666663,
+      "RandomForest": 0.0
+    },
+    "delta_classifiers_per_tier": {
+      "F1": 0.04166666666666663,
+      "F2": 0.0,
+      "F3": 0.0,
+      "F4": 0.0,
+      "F5": 0.0
+    },
+    "max_delta_features": 0.04166666666666663,
+    "max_delta_classifiers": 0.04166666666666663,
+    "hypothesis_confirmed": false
+  }
+}

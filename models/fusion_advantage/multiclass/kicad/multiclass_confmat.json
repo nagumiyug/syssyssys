@@ -1,0 +1,220 @@
+{
+  "class_names": [
+    "bulk_export",
+    "normal",
+    "project_scan",
+    "source_copy"
+  ],
+  "label_enc": {
+    "bulk_export": 0,
+    "normal": 1,
+    "project_scan": 2,
+    "source_copy": 3
+  },
+  "confmats": {
+    "scalars": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          5,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          5
+        ]
+      ]
+    },
+    "freq": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    },
+    "seq": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    },
+    "trans": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    },
+    "ctx": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    },
+    "fusion": {
+      "class_names": [
+        "bulk_export",
+        "normal",
+        "project_scan",
+        "source_copy"
+      ],
+      "confusion_matrix": [
+        [
+          6,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          6
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+strategy,session_accuracy
+scalars,0.9583333333333334
+freq,1.0
+seq,1.0
+trans,1.0
+ctx,1.0
+concat,1.0
+soft_vote,1.0
+hard_vote,1.0
+any_attack,1.0

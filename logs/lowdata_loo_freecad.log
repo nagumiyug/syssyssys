@@ -1,0 +1,181 @@
+Found 80 CSV files
+  Classes (4): ['bulk_export', 'normal', 'project_scan', 'source_copy']
+  train pool: 56  held-out test: 24
+Building vocab …
+Building held-out test feature matrix once …
+
+=== n_per_class=2 ===
+  seed=0: 8 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=1: 8 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=2: 8 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=3: 8 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=4: 8 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=0.958  recall=['0.83', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=0.917  recall=['0.67', '1.00', '1.00', '1.00']
+
+=== n_per_class=3 ===
+  seed=0: 12 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=1: 12 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=2: 12 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=3: 12 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=4: 12 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+
+=== n_per_class=5 ===
+  seed=0: 20 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=1: 20 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=2: 20 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=3: 20 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=4: 20 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+
+=== n_per_class=10 ===
+  seed=0: 40 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=1: 40 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=2: 40 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=3: 40 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+  seed=4: 40 train sessions
+    [fusion_full           ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_scalars  ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_freq     ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_seq      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_trans    ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+    [fusion_minus_ctx      ] acc=1.000  recall=['1.00', '1.00', '1.00', '1.00']
+
+Raw          → models/fusion_advantage/lowdata_loo/freecad/lowdata_loo_results.csv
+Summary      → models/fusion_advantage/lowdata_loo/freecad/lowdata_loo_summary.csv
+Class break  → models/fusion_advantage/lowdata_loo/freecad/lowdata_loo_class_breakdown.csv
+
+================================================================================
+Aggregate accuracy (mean ± std over seeds)
+================================================================================
+n_per_class             2     3     5     10
+config                                      
+fusion_full          1.000 1.000 1.000 1.000
+fusion_minus_scalars 1.000 1.000 1.000 1.000
+fusion_minus_freq    0.992 1.000 1.000 1.000
+fusion_minus_seq     1.000 1.000 1.000 1.000
+fusion_minus_trans   1.000 1.000 1.000 1.000
+fusion_minus_ctx     0.983 1.000 1.000 1.000
+
+================================================================================
+Per-class recall (mean over seeds) at lowest n_per_class
+================================================================================
+class                 bulk_export  normal  project_scan  source_copy
+config                                                              
+fusion_full                 1.000   1.000         1.000        1.000
+fusion_minus_scalars        1.000   1.000         1.000        1.000
+fusion_minus_freq           0.967   1.000         1.000        1.000
+fusion_minus_seq            1.000   1.000         1.000        1.000
+fusion_minus_trans          1.000   1.000         1.000        1.000
+fusion_minus_ctx            0.933   1.000         1.000        1.000

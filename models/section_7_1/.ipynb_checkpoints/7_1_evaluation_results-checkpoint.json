@@ -1,0 +1,56 @@
+{
+  "FreeCAD": {
+    "software": "FreeCAD",
+    "events_raw": 1788239,
+    "events_filtered": 1432712,
+    "chunk_metrics": {
+      "accuracy": 0.944954128440367,
+      "precision": 0.9871794871794872,
+      "recall": 0.9390243902439024,
+      "f1": 0.9625,
+      "fpr": 0.037037037037037035,
+      "tp": 308,
+      "tn": 104,
+      "fp": 4,
+      "fn": 20
+    },
+    "session_metrics": {
+      "accuracy": 0.9583333333333334,
+      "precision": 1.0,
+      "recall": 0.9444444444444444,
+      "f1": 0.9714285714285714,
+      "fpr": 0.0,
+      "tp": 17,
+      "tn": 6,
+      "fp": 0,
+      "fn": 1
+    }
+  },
+  "KiCad": {
+    "software": "KiCad",
+    "events_raw": 18063041,
+    "events_filtered": 11667966,
+    "chunk_metrics": {
+      "accuracy": 0.8715492957746479,
+      "precision": 0.7948243992606284,
+      "recall": 0.9930715935334873,
+      "f1": 0.8829568788501027,
+      "fpr": 0.24422442244224424,
+      "tp": 1720,
+      "tn": 1374,
+      "fp": 444,
+      "fn": 12
+    },
+    "session_metrics": {
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "fpr": 0.0,
+      "tp": 18,
+      "tn": 6,
+      "fp": 0,
+      "fn": 0
+    }
+  }
+}

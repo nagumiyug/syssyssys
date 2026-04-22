@@ -1,0 +1,13 @@
+scenario,config,n_features,session_accuracy,macro_f1
+freecad_to_kicad,fusion_full,669,0.25,0.1
+freecad_to_kicad,fusion_minus_freq,647,0.25,0.1
+freecad_to_kicad,fusion_minus_seq,167,0.5,0.375
+freecad_to_kicad,fusion_minus_trans,536,0.25,0.1
+freecad_to_kicad,fusion_minus_ctx,660,0.25,0.1
+freecad_to_kicad,fusion_minus_scalars,666,0.25,0.1
+kicad_to_freecad,fusion_full,669,0.25,0.1
+kicad_to_freecad,fusion_minus_freq,647,0.25,0.1
+kicad_to_freecad,fusion_minus_seq,167,0.25,0.1
+kicad_to_freecad,fusion_minus_trans,536,0.25,0.1
+kicad_to_freecad,fusion_minus_ctx,660,0.25,0.1
+kicad_to_freecad,fusion_minus_scalars,666,0.25,0.1

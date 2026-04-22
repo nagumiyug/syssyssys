@@ -1,0 +1,44 @@
+Classes: ['bulk_export', 'normal', 'project_scan', 'source_copy']
+Building vocab + feature matrices …
+  scalars: 3 features
+  freq: 21 features
+  seq: 309 features
+  trans: 95 features
+  ctx: 8 features
+
+Training full-fusion RF …
+  full-fusion test acc: 0.8786
+
+Gini importance grouped →
+  group  sum_importance  pct_of_total  n_features
+    seq        0.478858      0.478858         309
+  trans        0.285395      0.285395          95
+    ctx        0.130427      0.130427           8
+   freq        0.058628      0.058628          21
+scalars        0.046693      0.046693           3
+
+Global permutation importance (shuffle each group, 5 seeds) …
+  scalars     mean drop=0.0076  std=0.0018
+  freq        mean drop=0.0086  std=0.0072
+  seq         mean drop=0.2762  std=0.0124
+  trans       mean drop=0.0886  std=0.0147
+  ctx         mean drop=0.0614  std=0.0066
+
+Per-class permutation importance (one-vs-rest binary RFs) …
+  [bulk_export] binary RF base acc=0.8810
+  [normal] binary RF base acc=0.9476
+  [project_scan] binary RF base acc=0.8833
+  [source_copy] binary RF base acc=0.9690
+
+Per-class permutation importance (mean acc drop):
+class    bulk_export  normal  project_scan  source_copy
+group                                                  
+scalars      -0.0152  0.0005       -0.0171      -0.0029
+freq         -0.0167  0.0010       -0.0214      -0.0052
+seq           0.0600  0.1062        0.1343       0.1881
+trans         0.0152  0.0600        0.0014       0.0257
+ctx           0.0057  0.0095        0.0162       0.0338
+
+Gini    → models/fusion_advantage/importance/freecad/gini_importance_grouped.csv
+Perm    → models/fusion_advantage/importance/freecad/permutation_importance_global.csv
+PerCls  → models/fusion_advantage/importance/freecad/permutation_importance_per_class.csv

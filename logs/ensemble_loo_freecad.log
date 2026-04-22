@@ -1,0 +1,162 @@
+Found 80 CSV files
+  Classes: ['bulk_export', 'normal', 'project_scan', 'source_copy']
+Building vocab …
+Building train feature matrix …
+Pre-training single-mode RFs …
+  [scalars] 3 features
+  [freq] 21 features
+  [seq] 309 features
+  [trans] 95 features
+  [ctx] 8 features
+Normal test sessions: 6
+  attack pool [bulk_export] size: 351264
+  attack pool [project_scan] size: 344652
+  attack pool [source_copy] size: 384160
+
+============================================================
+Running ensemble LOO across blend attacks
+============================================================
+
+attack_type=bulk_export
+  br=0.00 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=0  full=0.167  -sc=0.000  -fq=0.167  -sq=0.167  -tr=0.167  -cx=0.167
+  br=0.05 seed=1  full=0.167  -sc=0.000  -fq=0.167  -sq=0.167  -tr=0.167  -cx=0.167
+  br=0.05 seed=2  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=3  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=4  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.10 seed=0  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.10 seed=1  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.10 seed=2  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.10 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.10 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=0  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=2  full=0.833  -sc=0.167  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.20 seed=3  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.20 seed=4  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.30 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=1  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=2  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=4  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.50 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=3  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=0  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=1  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=0  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+
+attack_type=project_scan
+  br=0.00 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=1  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=2  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=3  full=0.500  -sc=0.000  -fq=0.500  -sq=0.500  -tr=0.500  -cx=0.500
+  br=0.05 seed=4  full=0.167  -sc=0.000  -fq=0.167  -sq=0.167  -tr=0.167  -cx=0.167
+  br=0.10 seed=0  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.10 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.10 seed=2  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.10 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.10 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=2  full=1.000  -sc=0.333  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=4  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=0  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.30 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=2  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.30 seed=3  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=4  full=1.000  -sc=0.333  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=2  full=0.833  -sc=0.333  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.50 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.50 seed=4  full=1.000  -sc=0.333  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=1  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=3  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.70 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=0  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=1  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=3  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=1.00 seed=4  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+
+attack_type=source_copy
+  br=0.00 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=1  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=2  full=0.167  -sc=0.000  -fq=0.167  -sq=0.167  -tr=0.167  -cx=0.167
+  br=0.05 seed=3  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=0.05 seed=4  full=0.167  -sc=0.000  -fq=0.167  -sq=0.167  -tr=0.167  -cx=0.167
+  br=0.10 seed=0  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.10 seed=1  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.10 seed=2  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.10 seed=3  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.10 seed=4  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.20 seed=0  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=1  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.20 seed=2  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.20 seed=3  full=0.833  -sc=0.167  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.20 seed=4  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=0  full=1.000  -sc=0.000  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=1  full=1.000  -sc=0.167  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=2  full=0.833  -sc=0.500  -fq=0.667  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.30 seed=3  full=1.000  -sc=0.500  -fq=1.000  -sq=1.000  -tr=1.000  -cx=1.000
+  br=0.30 seed=4  full=0.833  -sc=0.167  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.50 seed=0  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.50 seed=1  full=0.833  -sc=0.333  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.50 seed=2  full=0.500  -sc=0.000  -fq=0.500  -sq=0.500  -tr=0.500  -cx=0.500
+  br=0.50 seed=3  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.50 seed=4  full=0.833  -sc=0.167  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.70 seed=0  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.70 seed=1  full=0.833  -sc=0.167  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=0.70 seed=2  full=0.500  -sc=0.000  -fq=0.500  -sq=0.500  -tr=0.500  -cx=0.500
+  br=0.70 seed=3  full=0.667  -sc=0.000  -fq=0.667  -sq=0.667  -tr=0.667  -cx=0.667
+  br=0.70 seed=4  full=0.833  -sc=0.000  -fq=0.833  -sq=0.833  -tr=0.833  -cx=0.833
+  br=1.00 seed=0  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=1.00 seed=1  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=1.00 seed=2  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=1.00 seed=3  full=0.000  -sc=0.000  -fq=0.000  -sq=0.000  -tr=0.000  -cx=0.000
+  br=1.00 seed=4  full=0.167  -sc=0.167  -fq=0.000  -sq=0.167  -tr=0.167  -cx=0.167
+
+Raw → models/fusion_advantage/ensemble_loo/freecad/ensemble_loo_blend_results.csv
+Summary → models/fusion_advantage/ensemble_loo/freecad/ensemble_loo_blend_summary.csv
+
+==========================================================================================
+Ensemble LOO blend detection — drop when removing each mode
+
+  attack_type=bulk_export
+    ens_full               0.000 0.067 0.867 0.867 0.967 1.000 1.000 1.000
+    ens_minus_scalars      0.000 0.000 0.000 0.033 0.100 0.067 0.033 0.000
+    ens_minus_freq         0.000 0.067 0.867 0.867 0.967 1.000 1.000 1.000
+    ens_minus_seq          0.000 0.067 0.867 0.867 0.967 1.000 1.000 1.000
+    ens_minus_trans        0.000 0.067 0.867 0.867 0.967 1.000 1.000 1.000
+    ens_minus_ctx          0.000 0.067 0.867 0.867 0.967 1.000 1.000 1.000
+
+  attack_type=project_scan
+    ens_full               0.000 0.133 0.900 1.000 0.933 0.967 1.000 1.000
+    ens_minus_scalars      0.000 0.000 0.000 0.133 0.100 0.167 0.067 0.067
+    ens_minus_freq         0.000 0.133 0.900 1.000 0.933 0.967 1.000 1.000
+    ens_minus_seq          0.000 0.133 0.900 1.000 0.933 0.967 1.000 1.000
+    ens_minus_trans        0.000 0.133 0.900 1.000 0.933 0.967 1.000 1.000
+    ens_minus_ctx          0.000 0.133 0.900 1.000 0.933 0.967 1.000 1.000
+
+  attack_type=source_copy
+    ens_full               0.000 0.067 0.833 0.933 0.933 0.733 0.733 0.033
+    ens_minus_scalars      0.000 0.000 0.000 0.100 0.267 0.100 0.033 0.033
+    ens_minus_freq         0.000 0.067 0.833 0.933 0.900 0.733 0.733 0.000
+    ens_minus_seq          0.000 0.067 0.833 0.933 0.933 0.733 0.733 0.033
+    ens_minus_trans        0.000 0.067 0.833 0.933 0.933 0.733 0.733 0.033
+    ens_minus_ctx          0.000 0.067 0.833 0.933 0.933 0.733 0.733 0.033

@@ -1,0 +1,13 @@
+software,config,n_features,session_accuracy,macro_f1
+freecad,fusion_full,436,1.0,1.0
+freecad,fusion_minus_freq,415,1.0,1.0
+freecad,fusion_minus_seq,127,1.0,1.0
+freecad,fusion_minus_trans,341,1.0,1.0
+freecad,fusion_minus_ctx,428,1.0,1.0
+freecad,fusion_minus_scalars,433,1.0,1.0
+kicad,fusion_full,577,1.0,1.0
+kicad,fusion_minus_freq,557,1.0,1.0
+kicad,fusion_minus_seq,148,1.0,1.0
+kicad,fusion_minus_trans,460,1.0,1.0
+kicad,fusion_minus_ctx,569,1.0,1.0
+kicad,fusion_minus_scalars,574,1.0,1.0

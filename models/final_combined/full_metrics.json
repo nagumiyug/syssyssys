@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-04-10T21:14:35.433899",
+  "total_events_after_filter": 13100678,
+  "total_sessions": 160,
+  "model_config": {
+    "n_estimators": 300,
+    "max_depth": 9,
+    "class_weight": "balanced"
+  },
+  "evaluation_method": "session_level_majority_vote",
+  "base_features": 239,
+  "context_features": 296,
+  "base_model": {
+    "accuracy": 0.9791666666666666,
+    "precision": 1.0,
+    "recall": 0.9722222222222222,
+    "f1": 0.9859154929577464,
+    "fpr": 0.0,
+    "roc_auc": 1.0,
+    "tp": 35.0,
+    "tn": 12.0,
+    "fp": 0.0,
+    "fn": 1.0,
+    "total_sessions": 48.0
+  },
+  "context_model": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "fpr": 0.0,
+    "roc_auc": 1.0,
+    "tp": 36.0,
+    "tn": 12.0,
+    "fp": 0.0,
+    "fn": 0.0,
+    "total_sessions": 48.0
+  },
+  "accuracy_gain": 0.02083333333333337,
+  "fpr_drop": 0.0,
+  "all_criteria_passed": true
+}
