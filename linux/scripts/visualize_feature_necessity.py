@@ -23,15 +23,31 @@ import os
 
 import matplotlib
 matplotlib.use("Agg")
+import matplotlib.font_manager as fm
 import matplotlib.pyplot as plt
 import matplotlib.ticker as mticker
 import numpy as np
 import pandas as pd
 
+# ── pick a CJK-capable font (avoids "口口口" boxes for Chinese labels) ─────────
+_CJK_CANDIDATES = [
+    "Noto Sans CJK SC", "Noto Sans SC", "Source Han Sans SC",
+    "WenQuanYi Zen Hei", "WenQuanYi Micro Hei",
+    "SimHei", "Microsoft YaHei", "PingFang SC",
+]
+try:
+    fm._load_fontmanager(try_read_cache=False)
+except Exception:
+    pass
+_available = {f.name for f in fm.fontManager.ttflist}
+_cjk_font = next((c for c in _CJK_CANDIDATES if c in _available), None)
+_FONT_FAMILY = [_cjk_font, "DejaVu Sans"] if _cjk_font else ["DejaVu Sans"]
+
 # ── style ─────────────────────────────────────────────────────────────────────
 
 plt.rcParams.update({
-    "font.family":       "DejaVu Sans",
+    "font.family":        _FONT_FAMILY,
+    "axes.unicode_minus": False,
     "font.size":         10,
     "axes.titlesize":    11,
     "axes.labelsize":    10,

@@ -1,0 +1,62 @@
+[
+  {
+    "case_stem": "freecad_normal_r1",
+    "base_session_id": "8ba68777-dddb-430e-bcb5-2ce6415a8d69",
+    "scenario": "normal_export_linux_r1",
+    "true_label": "normal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 3,
+    "fraction_abnormal": 0.16666666666666666,
+    "vote_threshold": 0.5,
+    "final_session_pred": "normal",
+    "correct": true,
+    "min_proba_abnormal": 0.015342697109107715,
+    "max_proba_abnormal": 0.6236150241042419,
+    "mean_proba_abnormal": 0.20711132557140924
+  },
+  {
+    "case_stem": "freecad_bulk_export_r5",
+    "base_session_id": "50c104bd-342b-49af-bbd2-7f3367194e0e",
+    "scenario": "bulk_export_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 16,
+    "fraction_abnormal": 0.8888888888888888,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.3659581022307296,
+    "max_proba_abnormal": 0.9922388504189669,
+    "mean_proba_abnormal": 0.8221307690889181
+  },
+  {
+    "case_stem": "freecad_source_copy_r5",
+    "base_session_id": "f562e014-aba6-443b-9f63-23f00d697380",
+    "scenario": "source_copy_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 19,
+    "n_predicted_abnormal_chunks": 19,
+    "fraction_abnormal": 1.0,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.6182119084428842,
+    "max_proba_abnormal": 1.0,
+    "mean_proba_abnormal": 0.8945303461428935
+  },
+  {
+    "case_stem": "freecad_project_scan_r5",
+    "base_session_id": "9940531b-4290-43c6-9891-d0e1bb6f4ac1",
+    "scenario": "project_scan_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 17,
+    "n_predicted_abnormal_chunks": 17,
+    "fraction_abnormal": 1.0,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.5991355072490092,
+    "max_proba_abnormal": 1.0,
+    "mean_proba_abnormal": 0.8670666933101149
+  }
+]

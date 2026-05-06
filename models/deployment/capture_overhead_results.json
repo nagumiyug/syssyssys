@@ -1,0 +1,54 @@
+{
+  "throughput_summary": {
+    "FreeCAD": {
+      "n_sessions": 80,
+      "events_per_sec": {
+        "min": 1874.8,
+        "p50": 5723.2,
+        "p95": 5942.2,
+        "max": 6010.2
+      },
+      "bytes_per_sec_kb": {
+        "p50": 989.0,
+        "p95": 1046.7
+      },
+      "mean_syscall_duration_us": {
+        "p50": 176.032,
+        "p95": 27.5
+      },
+      "session_length_s": {
+        "p50": 3.94,
+        "max": 11.79
+      }
+    },
+    "KiCad": {
+      "n_sessions": 80,
+      "events_per_sec": {
+        "min": 1390.9,
+        "p50": 2419.0,
+        "p95": 3021.9,
+        "max": 3068.3
+      },
+      "bytes_per_sec_kb": {
+        "p50": 391.6,
+        "p95": 513.2
+      },
+      "mean_syscall_duration_us": {
+        "p50": 424.661,
+        "p95": 26.0
+      },
+      "session_length_s": {
+        "p50": 70.72,
+        "max": 255.86
+      }
+    }
+  },
+  "inference_benchmark": {
+    "FreeCAD": {
+      "error": "No objects to concatenate"
+    },
+    "KiCad": {
+      "error": "No objects to concatenate"
+    }
+  }
+}

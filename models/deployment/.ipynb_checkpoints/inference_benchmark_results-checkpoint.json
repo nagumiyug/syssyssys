@@ -1,0 +1,72 @@
+{
+  "FreeCAD": {
+    "n_features": 291,
+    "n_total_windows": 436,
+    "n_train": 305,
+    "n_test": 131,
+    "train_s": 0.872,
+    "batch_predict_s": 0.0196,
+    "batch_predict_n_jobs1_us_per_window": 149.8,
+    "batch_predict_n_jobs4_us_per_window": 1620.3,
+    "single_window_predict_ms_p50": 16.883,
+    "single_window_predict_ms_p95": 72.7318,
+    "single_window_predict_ms_mean": 34.9778,
+    "samples": [
+      {
+        "stage": "baseline",
+        "rss_mb": 152.8,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_train",
+        "rss_mb": 156.9,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_batch_predict",
+        "rss_mb": 156.9,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_single_predict",
+        "rss_mb": 157.0,
+        "cpu_pct": 0.0
+      }
+    ]
+  },
+  "KiCad": {
+    "n_features": 291,
+    "n_total_windows": 3550,
+    "n_train": 2485,
+    "n_test": 1065,
+    "train_s": 2.167,
+    "batch_predict_s": 0.0328,
+    "batch_predict_n_jobs1_us_per_window": 30.8,
+    "batch_predict_n_jobs4_us_per_window": 297.5,
+    "single_window_predict_ms_p50": 17.0534,
+    "single_window_predict_ms_p95": 70.6722,
+    "single_window_predict_ms_mean": 34.8681,
+    "samples": [
+      {
+        "stage": "baseline",
+        "rss_mb": 172.6,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_train",
+        "rss_mb": 180.6,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_batch_predict",
+        "rss_mb": 181.6,
+        "cpu_pct": 0.0
+      },
+      {
+        "stage": "after_single_predict",
+        "rss_mb": 181.7,
+        "cpu_pct": 0.0
+      }
+    ]
+  }
+}

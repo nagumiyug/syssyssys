@@ -1,0 +1,62 @@
+[
+  {
+    "case_stem": "freecad_normal_r5",
+    "base_session_id": "d7286abc-0f16-4aa5-9771-a8eb3c43f3d2",
+    "scenario": "normal_export_linux_r5",
+    "true_label": "normal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 0,
+    "fraction_abnormal": 0.0,
+    "vote_threshold": 0.5,
+    "final_session_pred": "normal",
+    "correct": true,
+    "min_proba_abnormal": 0.008970921503240536,
+    "max_proba_abnormal": 0.44815298385459895,
+    "mean_proba_abnormal": 0.13284856068196071
+  },
+  {
+    "case_stem": "freecad_normal_r1",
+    "base_session_id": "8ba68777-dddb-430e-bcb5-2ce6415a8d69",
+    "scenario": "normal_export_linux_r1",
+    "true_label": "normal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 3,
+    "fraction_abnormal": 0.16666666666666666,
+    "vote_threshold": 0.5,
+    "final_session_pred": "normal",
+    "correct": true,
+    "min_proba_abnormal": 0.015799281616396287,
+    "max_proba_abnormal": 0.6251319245250532,
+    "mean_proba_abnormal": 0.20656520164079345
+  },
+  {
+    "case_stem": "freecad_source_copy_r5",
+    "base_session_id": "f562e014-aba6-443b-9f63-23f00d697380",
+    "scenario": "source_copy_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 19,
+    "n_predicted_abnormal_chunks": 19,
+    "fraction_abnormal": 1.0,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.56613258045946,
+    "max_proba_abnormal": 1.0,
+    "mean_proba_abnormal": 0.8844480068993334
+  },
+  {
+    "case_stem": "freecad_bulk_export_r5",
+    "base_session_id": "50c104bd-342b-49af-bbd2-7f3367194e0e",
+    "scenario": "bulk_export_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 17,
+    "fraction_abnormal": 0.9444444444444444,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.4065601197090561,
+    "max_proba_abnormal": 0.9954192113747283,
+    "mean_proba_abnormal": 0.8290132103597269
+  }
+]

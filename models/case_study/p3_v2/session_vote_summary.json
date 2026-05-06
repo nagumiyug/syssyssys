@@ -1,0 +1,62 @@
+[
+  {
+    "case_stem": "freecad_normal_r1",
+    "base_session_id": "8ba68777-dddb-430e-bcb5-2ce6415a8d69",
+    "scenario": "normal_export_linux_r1",
+    "true_label": "normal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 3,
+    "fraction_abnormal": 0.16666666666666666,
+    "vote_threshold": 0.5,
+    "final_session_pred": "normal",
+    "correct": true,
+    "min_proba_abnormal": 0.01732208380216107,
+    "max_proba_abnormal": 0.6193540492022103,
+    "mean_proba_abnormal": 0.20906171521624925
+  },
+  {
+    "case_stem": "freecad_bulk_export_r5",
+    "base_session_id": "50c104bd-342b-49af-bbd2-7f3367194e0e",
+    "scenario": "bulk_export_linux_r5",
+    "true_label": "abnormal",
+    "n_chunks": 18,
+    "n_predicted_abnormal_chunks": 17,
+    "fraction_abnormal": 0.9444444444444444,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.3290629256201757,
+    "max_proba_abnormal": 0.9902951269911389,
+    "mean_proba_abnormal": 0.819288952457093
+  },
+  {
+    "case_stem": "freecad_source_copy_r2",
+    "base_session_id": "cf80a697-23be-4193-a1c8-9153b37a3fce",
+    "scenario": "source_copy_linux_r2",
+    "true_label": "abnormal",
+    "n_chunks": 19,
+    "n_predicted_abnormal_chunks": 18,
+    "fraction_abnormal": 0.9473684210526315,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.47101519395182395,
+    "max_proba_abnormal": 1.0,
+    "mean_proba_abnormal": 0.8585902129583569
+  },
+  {
+    "case_stem": "freecad_project_scan_r3",
+    "base_session_id": "4eee9119-7107-41ff-99c1-b9b30cca95e5",
+    "scenario": "project_scan_linux_r3",
+    "true_label": "abnormal",
+    "n_chunks": 17,
+    "n_predicted_abnormal_chunks": 15,
+    "fraction_abnormal": 0.8823529411764706,
+    "vote_threshold": 0.5,
+    "final_session_pred": "abnormal",
+    "correct": true,
+    "min_proba_abnormal": 0.27094982570839365,
+    "max_proba_abnormal": 0.9951874808294289,
+    "mean_proba_abnormal": 0.8534527241281296
+  }
+]
